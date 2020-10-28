@@ -1,7 +1,6 @@
 from flask import Flask
 import algo 
 
-
 apps = Flask('Apps')
 
 @apps.route('/')
