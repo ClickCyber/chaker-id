@@ -8,9 +8,6 @@ apps = Client('config/Session',
               api_hash='b6b154c3707471f5339bd661645ed3d6',
               bot_token='1292354229:AAFCqtLRBAtgYiWBaYTrhfXieHLRJlqjypI')
 
-
-
-
 @apps.on_message(Filters.command('start'))
 def start(client, message):
     apps.send_message(message.chat.id, 
@@ -20,10 +17,6 @@ def start(client, message):
     [InlineKeyboardButton('יוצר 👨🏻‍💻', url='t.me/writeXcode'), InlineKeyboardButton('קוד מקור 📝', url='https://github.com/ClickCyber/chaker-id')],
     [InlineKeyboardButton(' 🆔 בדוק מספר ת.ז 🆔', switch_inline_query_current_chat='')]
     ]))
-
-
-
-
 
 @apps.on_inline_query()
 def inline(client, message):
@@ -35,4 +28,5 @@ def inline(client, message):
         message.answer(
         results=[InlineQueryResultArticle("מספר תעודת זהות לא נמצא ! ❌",
         InputTextMessageContent(f"מספר תעודת זהות {message.query} לא מצתט"))])
+
 apps.run()
