@@ -6,7 +6,7 @@ from apps.algo import id_chaker
 apps = Client('config/Session',
               api_id=1,
               api_hash='b6b154c3707471f5339bd661645ed3d6',
-              bot_token='בוט טוקן')
+              bot_token='1292354229:AAFCqtLRBAtgYiWBaYTrhfXieHLRJlqjypI')
 
 
 
@@ -17,7 +17,7 @@ def start(client, message):
     f'{message.chat.first_name} ברוכים הבאים', 
     reply_markup=InlineKeyboardMarkup(
         [
-    [InlineKeyboardButton('יוצר 👨🏻‍💻', url='t.me/writeXcode'), InlineKeyboardButton('קוד מקור 📝', url='t.me/writeXcode')],
+    [InlineKeyboardButton('יוצר 👨🏻‍💻', url='t.me/writeXcode'), InlineKeyboardButton('קוד מקור 📝', url='https://github.com/ClickCyber/chaker-id')],
     [InlineKeyboardButton(' 🆔 בדוק מספר ת.ז 🆔', switch_inline_query_current_chat='')]
     ]))
 
