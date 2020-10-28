@@ -2,11 +2,10 @@ def id_chaker(number):
     try:
         int(number)
     except ValueError:
-        return 'You can send only number'
+        return False
     x , data = 0, []
     if len(number) != 9:
-        return 'is id sort or long type Id number Check'
-
+        return False
     else:
         for i in number:
             x += 1
