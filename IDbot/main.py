@@ -23,7 +23,7 @@ def inline(client, message):
     if id_chaker(message.query) == True:
         message.answer(
         results=[InlineQueryResultArticle("מספר תעודת זהות נמצא  ! ✔️",
-        InputTextMessageContent(f"מספר תעןדת זהות {message.query} תקין "))])
+        InputTextMessageContent(f"מספר תעודת זהות {message.query} תקין "))])
     else:
         message.answer(
         results=[InlineQueryResultArticle("מספר תעודת זהות לא נמצא ! ❌",
