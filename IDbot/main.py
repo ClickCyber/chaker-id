@@ -1,4 +1,4 @@
-from pyrogram import Filters, InlineQueryResultArticle, Client
+from pyrogram import filters, InlineQueryResultArticle, Client
 from pyrogram import InputTextMessageContent, InlineKeyboardMarkup
 from pyrogram import InlineKeyboardButton
 from apps.algo import id_chaker
@@ -8,7 +8,7 @@ apps = Client('config/Session',
               api_hash='b6b154c3707471f5339bd661645ed3d6',
               bot_token='1292354229:AAFCqtLRBAtgYiWBaYTrhfXieHLRJlqjypI')
 
-@apps.on_message(Filters.command('start'))
+@apps.on_message(filters.command('start'))
 def start(client, message):
     apps.send_message(message.chat.id, 
     f'{message.chat.first_name} ברוכים הבאים', 
